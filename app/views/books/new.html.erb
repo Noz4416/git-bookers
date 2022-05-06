@@ -1,0 +1,17 @@
+<p class="report">Completed successfully</p>
+<%= form_with model:@book do |f| %>
+
+  <p><strong>Title</strong>
+  <%= @book.title %>
+  </p>
+
+  <p><strond>Body</strond>
+  <%= @book.body %>
+  </p>
+
+  <a>Edit</a>
+  <a>Back</a>
+
+
+
+<% end %>

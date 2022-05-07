@@ -44,7 +44,7 @@ p,td{
 }
 
 table{
-  width:100%;
+  width:100%;  
   display:table;
   border-collapse:separate;
   text-indent:initial;
@@ -83,8 +83,12 @@ td{
   margin-bottom:10px;
 }
 
-.report{
+.flash{
   color:#008000;
+}
+
+h3{
+  color:re;
 }
 
 tbody{

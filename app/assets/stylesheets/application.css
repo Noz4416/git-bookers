@@ -43,39 +43,14 @@ p,td{
   margin:33px ;
 }
 
-table{
-  width:100%;  
-  display:table;
-  border-collapse:separate;
-  text-indent:initial;
-  border-spacing:2px;
-  border-color:grey;
-}
 
-thead{
-  display:table-header-group;
-  vertical-align:middle;
-  border-color:inherit;
-}
-
-
-tr{
-  display:table-row;
-  vertical-align:initial;
-  border-color:inherit;
-}
 
 th{
   padding-bottom:5px;
-  display:table-cell;
-  vertical-align:inherit;
-  font-weight:bold;
 }
 
 
 td{
-  display:table-cell;
-  vertical-align:inherit;
   padding:7px 5px 0 5px;
 }
 
@@ -85,14 +60,10 @@ td{
 
 .flash{
   color:#008000;
+  font-size:20px;
 }
 
 h3{
-  color:re;
+  color:red;
 }
 
-tbody{
-  display:table-row-group;
-  vertical-align:middle;
-  border-color:inherit;
-}

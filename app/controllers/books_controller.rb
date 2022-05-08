@@ -3,12 +3,13 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(book_params)
-    if @book.save
+    book = Book.new(book_params)
+    if book.save
       flash[:notice] ="Completed successfully"
       redirect_to book_path(book.id)
     else
-
+      @books =Book.all
+      @book = book
       render :index
     end
   end
@@ -31,6 +32,9 @@ class BooksController < ApplicationController
     if book.update(book_params)
       flash[:notice] ="Completed successfully"
       redirect_to book_path(book.id)
+    else
+      @book = book
+      render :edit
     end
   end
   
@@ -40,12 +44,13 @@ class BooksController < ApplicationController
       flash[:notice] ="Completed successfully"
       redirect_to books_path(book.id)
     end
-  end
-
-
-
+  end 
+  
+  
+  
   private
   def book_params
     params.require(:book).permit(:title, :body)
   end
+  
 end
